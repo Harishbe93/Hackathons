@@ -123,7 +123,7 @@ import json
 def getplace(lat, lon):
     url = "https://maps.googleapis.com/maps/api/geocode/json?"
     url += "latlng=%s,%s&sensor=false" % (lat, lon)
-    url += "&key=AIzaSyDORG2RIa5VCszlWAdpFQ9JUb8Uhf2oVhI"
+    url += "&key=YOUR API KEY"
     v = get(url,verify = False)
     j = json.loads(v.content.decode('utf-8'))
     
